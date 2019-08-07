@@ -7,8 +7,8 @@ function searchArrayWord(array, word){
       if( array[i] === word){
          return true; 
       }
-  return false;
-   } 
+    }
+    return false;
 }
 console.log(searchArrayWord(array, word));
 
@@ -34,8 +34,22 @@ console.log(srebmun);
 
 //task 4
 
-const name =  {html:'HTML', css: 'CSS', js: 'ECMA'}; 
-console.log(Object.values(name));
+/*
+  const name =  {html:'HTML', css: 'CSS', js: 'ECMA'}; 
+  console.log(Object.values(name));
+*/
+
+let name = { html: 'HTML', css: 'CSS', js: 'ECMA' };
+let newName = [];
+
+function getKeys(keys) {
+    for (let key in keys) {
+        newName.push(keys[key]);
+    }
+    return newName;
+}
+
+console.log(getKeys(name));
 
 //task 5
 
